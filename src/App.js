@@ -71,9 +71,16 @@ class App extends React.Component {
   }
 }
 
+// Destructure when only have one state object
 const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser
 });
+
+// Destructure when having multiple state objects
+// const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+//   currentUser,
+//   hidden
+// });
 
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
