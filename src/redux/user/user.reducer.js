@@ -1,6 +1,6 @@
-import constant from './constant';
+import UserActionTypes from './user.types';
 
-const { SET_CURRENT_USER } = constant;
+const { SET_CURRENT_USER } = UserActionTypes;
 
 const INITIAL_STATE = {
     currentUser: null
